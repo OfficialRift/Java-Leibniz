@@ -14,9 +14,12 @@ class piformula
             {
                 pi = pi - (1/den);
             }
-            den = den +2;
+            den = den + 2;
+
+            
         }
         pi = pi * 4;
         System.out.println(pi);
+        
     }
 }
