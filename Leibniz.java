@@ -1,25 +1,19 @@
 class piformula
 {
-    public static void main(String[] args) {
-        double pi = 0;
-        double den = 1;
+    public static void main(String[] args)
+    {
+        double pi = 0;      
 
-        for(int i = 0; i < 1000000000; i++)
-        {
-            if(i % 2 == 0)
+            for(int i = 0; i < 10000000; i++)
             {
-                pi = pi + (1/den);
-            }
-            else
+            double variablePart = 0;
+            for(int j = 1; j <= i; j++)
             {
-                pi = pi - (1/den);
+                variablePart += (Math.pow(-1, j+1) / ((2 * j) - 1));
             }
-            den = den + 2;
 
-            
+            pi = 4 * variablePart;
+            System.out.printf("Pi = " + pi + "\n");
         }
-        pi = pi * 4;
-        System.out.println(pi);
-        
     }
 }
