@@ -4,7 +4,7 @@ class piformula
         double pi = 0;
         double den = 1;
 
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 1000000000; i++)
         {
             if(i % 2 == 0)
             {
