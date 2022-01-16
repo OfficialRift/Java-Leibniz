@@ -4,7 +4,7 @@ class piformula
     {
         double pi = 0;      
 
-            for(int i = 0; i < 1000000; i++)
+            for(int i = 0; i < 100000; i++)
             {
             double variablePart = 0;
             for(int j = 1; j <= i; j++)
