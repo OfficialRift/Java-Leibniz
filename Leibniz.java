@@ -2,16 +2,12 @@ class piformula
 {
     public static void main(String[] args)
     {
-        double pi = 0;      
+        double pi = 0;  
+        double variablePart = 0;    
 
-            for(int i = 0; i < 100000; i++)
-            {
-            double variablePart = 0;
-            for(int j = 1; j <= i; j++)
-            {
-                variablePart += (Math.pow(-1, j+1) / ((2 * j) - 1));
-            }
-
+        for(int i = 1; i < 100001; i++)
+        {
+            variablePart += (Math.pow(-1, i+1) / ((2 * i) - 1));
             pi = 4 * variablePart;
             System.out.printf("Pi = " + pi + "\n");
         }
